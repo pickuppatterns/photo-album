@@ -1,12 +1,15 @@
 
 const HtmlPlugin = require('html-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+const path = require('path');
+
 //eslint-disable-next-line
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'dist/bundle.[hash].js'
-  },
+  path: path.resolve(__dirname, 'dist'),
+  filename: 'bundle.[hash].js'
+},
   devServer: {
     port: 7890
   },
