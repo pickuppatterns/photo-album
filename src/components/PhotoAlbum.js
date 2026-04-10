@@ -8,7 +8,7 @@ function PhotoAlbum({ photos }) {
     <main className={styles.main}>
       <h2>Michael Elliott Photography</h2>
       <div className={styles.grid}>
-        <Photos urls={photos}/>
+        <Photos urls={photos} />
       </div>
     </main>
   );

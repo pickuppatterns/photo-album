@@ -4,11 +4,12 @@ import styles from '../css/Photo.css';
 
 function Photo({ url }) {
   return (
-    <span className={styles.li}>
-      <img src={url} />
-    </span>
+    <div className={styles.photo}>
+      <img src={url} alt="photo" />
+    </div>
   );
 }
+
 Photo.propTypes = {
   url: PropTypes.string.isRequired
 };
